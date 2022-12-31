@@ -14,18 +14,19 @@
        <section>
     <form method="post">
           <div class="containertxt">
-      <textarea rows="7" placeholder="Escribe aqui" class="txt"></textarea>
+      <textarea rows="7" placeholder="Escribe aqui" class="txt" id="txt"></textarea>
+      <p>Solo se admiten palabras en minusculas y sin acentos</p>
         </div>
         
         <div class="containerbtn">
-    <button type="button" class="btn btn-primary btn-secondary" >Encriptar</button>
-    <button type="button" class="btnd btn-primaryd btn-secondaryd" >Desencriptar</button>
+    <button type="button" class="btn btn-primary btn-secondary" onclick="encriptar()" >Encriptar</button>
+    <button type="button" class="btnd btn-primaryd btn-secondaryd" onclick="desencriptar()" >Desencriptar</button>
         </div>
   </form>
     </section>
     <div class="containeres">
-      <div class="m1" id="res1">Aqui aparece la el resultado</div>
-      <button id="copiar" class="btnc btn-primaryc btn-secondaryc" >Copiar</button>
+      <div class="m1" id="res1">Aqui aparece el resultado</div>
+      <button id="copiar" class="btnc btn-primaryc btn-secondaryc" onclick="copiar()">Copiar</button>
     </div>
 
   </body>
